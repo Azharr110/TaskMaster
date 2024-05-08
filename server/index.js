@@ -17,7 +17,8 @@ dotenv.config();
 
 const PORT = process.env.PORT || 7000;
 
-const MONGOURL = process.env.MONGO_URL;
+const MONGOURL =
+  "mongodb://user:user1234@ac-0fdj1je-shard-00-00.yjjhdo5.mongodb.net:27017,ac-0fdj1je-shard-00-01.yjjhdo5.mongodb.net:27017,ac-0fdj1je-shard-00-02.yjjhdo5.mongodb.net:27017/?ssl=true&replicaSet=atlas-jdne4u-shard-0&authSource=admin&retryWrites=true&w=majority&appName=mern-todo";
 
 mongoose
   .connect(MONGOURL)
